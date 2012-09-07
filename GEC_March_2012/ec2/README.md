@@ -15,11 +15,7 @@ Set environment variables with your AWS credentials (in ~/.bashrc).
 
     export AWS_ACCESS_KEY_ID:  AWS Access Key ID
     export AWS_SECRET_ACCESS_KEY:  AWS Secret Access Key
-    # export EC2_KEYPAIR=shak # optional
 
-Get the code
-
-    git clone https://shakfu@github.com/shakfu/ndnec2.git
 
 Example
 -------
