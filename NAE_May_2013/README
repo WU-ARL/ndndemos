@@ -1,0 +1,49 @@
+
+Demo requirements:
+  install.sh contains most if not all of the install commands needed
+    to get started from a freshly installed Ubuntu system. 
+
+  CCNx (included in the install.sh above)
+    git clone http://github.com/WU-ARL/ccnx
+
+  ndnvideo (included in the install.sh above)
+    git clone http://github.com/named-data/ndnvideo
+
+  Firefox plugin (NOT included in the install.sh above)
+    https://github.com/named-data/ndn-js/raw/downloads/ndnProtocol.xpi
+    Save it to a file. Then go to Firefox: Tools: Add-ons
+      On Add-ons page, click on Gear Icon and select Install Add-on From File.
+      Add ndnProtocol.xpi
+    From NDN menu bar: select set and enter 127.0.0.1
+
+
+Demo commands:
+
+  Chat:
+   > ccnc -i 0 -l <name> ccnx:/ndn/broadcastNAEchat
+
+
+  Key verify
+   > cd NAE_May_2013/verify_content
+   > ./demo_verify.sh
+
+  Firefox:
+   URL=ndn:/ndn/wustl.edu/ndndemo/WUindex.html/
+   That will give you a list of images from WU that you can download:
+        Washington University in St. Louis Images:
+        Graham Chapel (Large)
+        Crow_Observatory (Large)
+        Quad (Small)
+        Brookings (Small) 
+   Watch out for Firefox caching. Also, things sometimes get weird and it
+     seems to lose its ability to load things. Not sure yet what is wrong.
+
+  ndnvideo (used for both stored video playback with 1000 clients and for live video)
+   > cd ndnvideo/videostreaming
+
+   # For video from CAIDA/UCSD:
+   > ./play.py /ndn/caida.org/apps/video
+
+   # For video from UCLA:
+   > ./play.py /ndn/ucla.edu/apps/video
+
