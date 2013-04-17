@@ -47,10 +47,13 @@ git clone http://github.com/named-data/ndnvideo
 # git UCLA's PyCCN for use with ndnvideo
 git clone -b bootstrapped http://github.com/named-data/PyCCN
 
+DIR=`pwd`
+echo "DIR=$DIR"
 #Install PyCCN
 cd PyCCN
 ./bootstrap 
-./configure --with-ccn=/root/ccnx/
+echo "./configure --with-ccn=$DIR/ccnx"
+./configure --with-ccn=$DIR/ccnx
 make
 make install
 
