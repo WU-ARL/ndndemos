@@ -6,8 +6,11 @@ sudo apt-get -y --force-yes install git
 git clone http://github.com/WU-ARL/ccnx
 
 echo "STARTing generation of ~/.ccnx/keystore"
+DIR=`pwd`
+cd
 chmod 755 ./ccnx/csrc/lib/ccn_initkeystore.sh
 ./ccnx/csrc/lib/ccn_initkeystore.sh
+cd $DIR
 echo "DONE with generation of ~/.ccnx/keystore"
 
 
@@ -33,6 +36,7 @@ sudo apt-get -y install libgtk2.0-dev
 sudo apt-get -y install python-gst0.10
 sudo apt-get -y install python-gtk2
 sudo apt-get -y install gstreamer0.10-plugins
+sudo apt-get -y install gstreamer0.10-ffmpeg
 
 cd ccnx
 

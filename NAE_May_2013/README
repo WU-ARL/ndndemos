@@ -9,12 +9,18 @@ Demo requirements:
   ndnvideo (included in the install.sh above)
     git clone http://github.com/named-data/ndnvideo
 
+  ndnvideo source needs to be edited to run in VM
+    edit ndnvideo/videostreaming/utils.py
+    change line 16 to be:
+        video_sink = "ffmpegcolorspace ! videoscale ! ximagesink window-width=704 window-height=480"
+
   Firefox plugin (NOT included in the install.sh above)
     https://github.com/named-data/ndn-js/raw/downloads/ndnProtocol.xpi
     Save it to a file. Then go to Firefox: Tools: Add-ons
       On Add-ons page, click on Gear Icon and select Install Add-on From File.
       Add ndnProtocol.xpi
     From NDN menu bar: select set and enter 127.0.0.1
+
 
 
 Demo commands:
