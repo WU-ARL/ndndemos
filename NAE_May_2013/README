@@ -26,7 +26,7 @@ Demo requirements:
 Demo commands:
 
   Chat:
-   > ccnc -i 0 -l <name> ccnx:/ndn/broadcastNAEchat
+   > ccnc -i 0 -l <name> ccnx:/ndn/broadcast/NAEchat
 
 
   Key verify
