@@ -1,5 +1,5 @@
 
-Demo requirements:
+Demo Setup requirements:
   install.sh contains most if not all of the install commands needed
     to get started from a freshly installed Ubuntu system. 
 
@@ -23,7 +23,7 @@ Demo requirements:
 
 
 
-Demo commands:
+Demo commands reference:
 
   Chat:
    > ccnc -i 0 -l <name> ccnx:/ndn/broadcast/NAEchat
