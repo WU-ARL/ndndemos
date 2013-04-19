@@ -2,19 +2,19 @@
 Pre-Demo:
   Log in to VM
   
-  Open Terminal Window #1
+  Open Terminal Window #1 for running ccnx
     > cd WU-ARL/ndndemos/NAE_May_2013
     > ./restartCCNX_tokyo.sh
   
-  Open Terminal Window #2
+  Open Terminal Window #2 for chat
     > cd WU-ARL/ndndemos/NAE_May_2013
     > ./chat.sh
 
-  Open Terminal Window #3
+  Open Terminal Window #3 for ndnvideo
     > cd WU-ARL/ndndemos/NAE_May_2013
     > 
 
-  Open Terminal Window #4
+  Open Terminal Window #4 for verify content
    > cd WU-ARL/ndndemos/NAE_May_2013
    > runVerify.sh
 
