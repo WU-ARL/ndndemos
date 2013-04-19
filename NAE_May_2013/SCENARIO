@@ -19,6 +19,10 @@ Pre-Demo:
    > runVerify.sh
 
   Open Firefox
+    Lighting Control:
+    http://borges.metwi.ucla.edu/lighting/app/picker.html
+
+    NDN plugin:
     In the NDN Menu bar: Click on Set and enter 127.0.0.1
     In the URL/Address window enter:
         ndn:/ndn/wustl.edu/ndndemo/NAEindex.html
@@ -31,3 +35,21 @@ Demo:
   Terminal Window #2:
      chat.
      Tell John to start video clients
+
+  Terminal Window #4:
+     > ./runVerify.sh
+
+  Firefox:
+    Select an image from list
+    After it loads, hit back arrow to get back to list
+    Select another image...
+
+  Terminal Window #3: play stored video from UCSD (or UCLA or ???)
+     > ./playCAIDA.sh
+
+    To stop the video, click the Red X on upper left corner of video window. Wait for it to clean up.
+
+    Now play the live video feed.
+    > ./playUCLA.sh
+
+   Bring up Firefox and go to Lighting Control page
