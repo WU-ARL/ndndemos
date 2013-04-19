@@ -9,7 +9,7 @@ Demo requirements:
   ndnvideo (included in the install.sh above)
     git clone http://github.com/named-data/ndnvideo
 
-  ndnvideo source needs to be edited to run in VM
+  ndnvideo source code needs to be edited to run in VM
     edit ndnvideo/videostreaming/utils.py
     change line 16 to be:
         video_sink = "ffmpegcolorspace ! videoscale ! ximagesink window-width=704 window-height=480"
