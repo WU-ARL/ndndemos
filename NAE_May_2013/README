@@ -1,5 +1,5 @@
 
-Demo requirements:
+Demo Setup requirements:
   install.sh contains most if not all of the install commands needed
     to get started from a freshly installed Ubuntu system. 
 
@@ -9,6 +9,11 @@ Demo requirements:
   ndnvideo (included in the install.sh above)
     git clone http://github.com/named-data/ndnvideo
 
+  ndnvideo source code needs to be edited to run in VM
+    edit ndnvideo/videostreaming/utils.py
+    change line 16 to be:
+        video_sink = "ffmpegcolorspace ! videoscale ! ximagesink window-width=704 window-height=480"
+
   Firefox plugin (NOT included in the install.sh above)
     https://github.com/named-data/ndn-js/raw/downloads/ndnProtocol.xpi
     Save it to a file. Then go to Firefox: Tools: Add-ons
@@ -17,10 +22,11 @@ Demo requirements:
     From NDN menu bar: select set and enter 127.0.0.1
 
 
-Demo commands:
+
+Demo commands reference:
 
   Chat:
-   > ccnc -i 0 -l <name> ccnx:/ndn/broadcastNAEchat
+   > ccnc -i 0 -l <name> ccnx:/ndn/broadcast/NAEchat
 
 
   Key verify
