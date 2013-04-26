@@ -6,10 +6,11 @@ ls
 
 SEQ=$RANDOM
 NUM=1
-TIMEOUT=3
+TIMEOUT=0.5
 while (true)
 do
 
+  echo ""
   echo "0: Quit"
   echo "1: for content signed by verified key"
   echo "2: for content signed by unverified key using vefified key name"
