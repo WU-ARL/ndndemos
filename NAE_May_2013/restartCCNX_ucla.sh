@@ -8,5 +8,5 @@ sudo -E /usr/local/bin/ccndstop
 sudo -E /usr/local/bin/ccndstart
 sleep 2
 #sudo -E /usr/local/bin/ccndhcpnode -f ccn_dhcp_client.conf.WASHU
-ccndc add ccnx:/ tcp 128.252.153.193 9695
+ccndc add ccnx:/ tcp spurs.cs.ucla.edu 9695
 
