@@ -1,4 +1,27 @@
+JDD: 2 hours before Demo:
 
+   Gateways
+     Start gateway instances, wait for them to get start.
+       ndndemo> cd /project/arl/NDN/jdd/MAY_2013_DEMO
+       ndndemo> ./startGateways.sh
+
+     Log in to each one:
+        > sudo su -
+        > cd /root/NDN
+        > ./kill.sh
+        > ./start.sh
+
+     Verify that all gateways are running successfully.
+
+   ndnvideo instances
+     Start ndnvideo instances on ndndemo
+       ndndemo> cd /project/arl/NDN/jdd/MAY_2013_DEMO
+       ndndemo> # verify that startAllInstances.sh is set to run 100 ndnvideo instances and then exit
+       ndndemo> ./startAllInstances.sh
+
+     Verify that video is working from desired source (/ndn/caida.org/apps/video or /ndn/ucla.edu/apps/video or ...)
+
+   
 Pre-Demo:
   Log in to VM
   
