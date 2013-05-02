@@ -13,7 +13,7 @@ do
   echo ""
   echo "0: Quit"
   echo "1: for content signed by verified key"
-  echo "2: for content signed by unverified key using vefified key name"
+  echo "2: for content signed by unverified key using verified key name"
   echo "3: for content signed by corrupted key"
   echo "9: repeat last request"
 
