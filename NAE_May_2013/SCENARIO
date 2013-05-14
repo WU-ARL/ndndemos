@@ -77,7 +77,9 @@ Demo:
      Tell John to stop video clients
 
     Now play the live video feed.
-    > ./playUCLA.sh
+    > ./playLive.sh
+    OR
+    > ./playLive_dev.sh
 
    Bring up Firefox and go to Lighting Control page
 
