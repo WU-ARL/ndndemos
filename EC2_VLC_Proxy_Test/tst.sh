@@ -1,0 +1,6 @@
+#!/bin/bash
+FILES="E1_L2_src_8080_from_Proxy.txt.ec2-23-22-100-243.compute-1.amazonaws.com E1_L2_src_8080_from_L1.txt.ec2-54-205-22-82.compute-1.amazonaws.com E1_L2_src_8080_from_Proxy.txt.ec2-54-205-22-82.compute-1.amazonaws.com E1_L2_src_8080_from_L1.txt.ec2-54-235-52-209.compute-1.amazonaws.com E1_L2_src_8080_from_Proxy.txt.ec2-54-235-52-209.compute-1.amazonaws.com W1_L2_src_8080_from_L1.txt.ec2-184-169-185-46.us-west-1.compute.amazonaws.com W1_L2_src_8080_from_Proxy.txt.ec2-184-169-185-46.us-west-1.compute.amazonaws.com W1_L2_src_8080_from_L1.txt.ec2-184-169-233-5.us-west-1.compute.amazonaws.com W1_L2_src_8080_from_Proxy.txt.ec2-184-169-233-5.us-west-1.compute.amazonaws.com W1_L2_src_8080_from_L1.txt.ec2-54-215-27-192.us-west-1.compute.amazonaws.com W1_L2_src_8080_from_Proxy.txt.ec2-54-215-27-192.us-west-1.compute.amazonaws.com W2_L2_src_8080_from_L1.txt.ec2-54-202-72-137.us-west-2.compute.amazonaws.com W2_L2_src_8080_from_Proxy.txt.ec2-54-202-72-137.us-west-2.compute.amazonaws.com W2_L2_src_8080_from_L1.txt.ec2-54-212-229-31.us-west-2.compute.amazonaws.com W2_L2_src_8080_from_Proxy.txt.ec2-54-212-229-31.us-west-2.compute.amazonaws.com W2_L2_src_8080_from_L1.txt.ec2-54-214-86-167.us-west-2.compute.amazonaws.com W2_L2_src_8080_from_Proxy.txt.ec2-54-214-86-167.us-west-2.compute.amazonaws.com"
+
+
+rm $FILES
+

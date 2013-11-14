@@ -1,0 +1,12 @@
+The files in this directory are used as the install scripts on EC2 Instances.
+The ec2Run.py script point to them via a URL and does a wget to retrieve
+the appropriate one for the type of instance being run.
+
+These scripts should be copied to a place where we can wget from and the 
+ec2Run.py script should be updated to point to the corresponding URL.
+
+These install scripts in turn use wget's to retrieve files that 
+the corresponding type of instance needs to run the apps required.
+The install scripts will need to be updated to point to the URL for
+the location of the files in the directory InstanceFiles. There is
+README file in that directory that describes them.
