@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ $# -eq 1 ]
+then
+   COUNT=$1
+else
+   echo "Usage: $0 <eastcount> <westcount>"
+   exit
+fi
+
+TIMEOUT=1200
+
+
+cd /project/arl/NDN/jdd
+source .ec2_access_west_1
+cd /project/arl/NDN/jdd/ndnec2
+
+echo "UCI"
+./ec2Run.py --timeout $TIMEOUT --type "m1.small" -c $COUNT -r "us-west-1" -n "robochat" -g "UCI" -o "ccnx:/ndn/broadcast/GEC_chat"  >& currentChats.UCI  &
+
+echo "UCLA"
+./ec2Run.py --timeout $TIMEOUT --type "m1.small" -c $COUNT -r "us-west-1" -n "robochat" -g "UCLA" -o "ccnx:/ndn/broadcast/GEC_chat"  >& currentChats.UCLA  &
+
