@@ -1,0 +1,42 @@
+
+This directory contains the scripts used to run experiments on EC2 using
+VLC and varnish proxies.
+
+There are basically three phases:
+   Start Instances
+   Run Apps
+   Process Data
+
+The data that is process for this set of tests is tcpdump data that is collected
+during the experiment. tcpdump is started by the run*.sh scripts which are 
+in the InstanceFiles directory.
+
+ec2Run.py: Connects to AWS EC2 to run the instances.
+InstallScripts: Directory that contains the install scripts run by the EC2 instances at boot time.
+                These scripts need to be copied to a place that we can use 'wget' from the instances
+                to retrieve them. See README file in the InstallScripts directory.
+InstanceFiles: Directory that contains the files specific to each type of instance.
+                These files need to be copied to a place that we can use 'wget' from the instances
+                to retrieve them. See README file in the InstanceFiles directory.
+counts.sh: Sets the number of client and proxy instances to run.
+start_clientsByRegion.sh: Starts just the client instances in their appropriate regions
+start_proxiesByRegion.sh: Starts just the proxiy instances in their appropriate regions
+start_server.sh: Starts the video server in its region (East, E1)
+startAllInstances.sh: calls start_clientsByRegion.sh, start_proxiesByRegion.sh and start_server.sh to start
+                      all instances.
+runAllApps.sh : ssh's out to each instance to start the apps. After a period of time it then kills all the apps
+                including the tcpdump's that were started for data collection.
+process_tcpdump.sh: ssh's out to each instance to process the stored tcpdump data and produces a set of local
+                    data files, one for each instance.
+
+mkAwk.sh: writes an awk script to process the local instance data files produced by process_tcpdump.sh
+
+
+Here are the commands that are typically run for an experiment:
+
+./startAllInstances.sh 
+./runAllApps.sh 
+./process_tcpdump.sh
+./mkAwk.sh > newAwk.sh 
+./newAwk.sh  > Results
+

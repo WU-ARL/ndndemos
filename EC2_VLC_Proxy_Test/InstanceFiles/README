@@ -1,0 +1,6 @@
+The files in this directory are used when we run the apps on an EC2 Instance.
+The install scripts for the instances do a wget to retrieve the files that 
+are needed for that type of instance.
+
+These files should be copied to a place where we can wget from and the 
+install scripts should be updated to point to the corresponding URL.
